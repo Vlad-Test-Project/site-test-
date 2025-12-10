@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестування</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-container">
+    <h1>Вхід у тест</h1>
+    <input type="text" id="name" placeholder="Прізвище Ім'я (наприклад, Шевченко Тарас)">
+    <input type="text" id="class" placeholder="Клас (наприклад, 10-А)">
+    <button id="start-btn">Розпочати Тест</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+
+  <div id="test-container" style="display: none;">
+    <h2 id="question-text"></h2>
+    <div id="options"></div>
+    <button id="next-btn">Наступне питання</button>
+  </div>
+
+  <div id="results-container" style="display: none;">
+    <h1>Результати</h1>
+    <div id="results-list"></div>
+    <p id="score"></p>
+  </div>
+
+  <div id="warning-modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 1px solid black;">
+    <p id="warning-text"></p>
+    <button id="continue-btn">Продовжити</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
